@@ -20,12 +20,24 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "shor-*/**",
+                "input": "node_modules/@mitel",
+                "output": "/shorelements"
+              },
+              {
+                "glob": "polymer*",
+                "input": "node_modules/@mitel/shor-polymer",
+                "output": "/shorelements/polymer"
+              }
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@mitel/shor-webcomponentsjs/webcomponents-lite.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -74,7 +86,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

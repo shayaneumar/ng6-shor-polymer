@@ -22,7 +22,18 @@
     "@angular/router": "^6.1.0",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "@mitel/shor-alert": "1.0.9",
+    "@mitel/shor-avatar": "1.0.7",
+    "@mitel/shor-button": "1.0.20",
+    "@mitel/shor-contextmenu": "1.0.20",
+    "@mitel/shor-styles": "1.0.8",
+    "@mitel/shor-textarea": "1.0.12",
+    "@mitel/shor-textfield": "1.0.11",
+    "@mitel/shor-toggle": "1.0.7",
+    "@mitel/shor-toolbar": "1.0.22",
+    "@mitel/shor-polymer": "1.0.2",
+    "@mitel/shor-webcomponentsjs": "1.0.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",

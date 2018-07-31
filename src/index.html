@@ -7,6 +7,30 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    window.Polymer = {
+        dom: 'shadow'
+    };
+
+    var shorelements = [
+        'shor-textfield'
+        // 'shor-button',
+        // 'shor-avatar',
+        // 'shor-textarea',
+        // 'shor-contextmenu',
+        // 'shor-alert',
+        // 'shor-toggle',
+        // 'shor-toolbar'
+    ];
+
+    var timestamp = new Date().getTime();
+    shorelements.forEach(function (elem) {
+        var link = document.createElement('link');
+        link.rel = 'import';
+        link.href = 'shorelements/' + elem + '/' + elem + '.html?' + timestamp;
+        document.head.appendChild(link);
+    });
+</script>
 </head>
 <body>
   <app-root></app-root>
